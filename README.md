@@ -1,5 +1,5 @@
 # my-blog-store 
-# Full Stack Open 2020
+<h5> Full Stack Open 2020 </h5>
 <h3>A React application that stores blog references</h3>
 <br/>
 <h5><u>Functionalities</u></h5>
