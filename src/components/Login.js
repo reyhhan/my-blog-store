@@ -21,17 +21,19 @@ const LoginForm = (props) => {
       <h4>Login</h4>
       <Form onSubmit= {handleSubmit}>
         <Form.Group>
-          <Form.Label>username:</Form.Label>
+          <Form.Label></Form.Label>
           <Form.Control
             type="text"
             id='username'
             name="Username"
+            placeholder="Username"
           />
-          <Form.Label>password:</Form.Label>
+          <Form.Label></Form.Label>
           <Form.Control
             type="password"
             id='password'
             name="Password"
+            placeholder="Username"
           />
         </Form.Group>
         <Button id='login-button' type="submit">login</Button>
