@@ -13,16 +13,18 @@ import { logout, setUser } from './reducer/userReducer'
 import { likeBlog,commentBlog, deleteBlog } from './reducer/blogReducer'
 import { setNotification } from './reducer/notificationReducer'
 import { connect, useSelector } from 'react-redux'
-import { Switch, Route, Link, Redirect, useRouteMatch } from 'react-router-dom'
+import { Switch, Route, Link, Redirect,useHistory, useRouteMatch } from 'react-router-dom'
 import { Navbar, Nav } from 'react-bootstrap'
 
 const Menu = ({ user, props }) => {
+  const history = useHistory()
   const padding = {
     paddingRight: 5
   }
   const handleLogout = () => {
     window.localStorage.removeItem('loggedInUser')
     props.setUser(null)
+    history.push('/')
   }
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
