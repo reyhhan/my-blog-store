@@ -1,0 +1,9 @@
+PUT http://localhost:3001/api/blogs/5fce6991f962520b60ffe075
+Content-Type: application/json
+
+{
+    "title" : "Peter Pan",
+    "author" : "Peter",
+    "url" : "https://www.adobe.com/downloads/",
+    "likes" : 14
+}
